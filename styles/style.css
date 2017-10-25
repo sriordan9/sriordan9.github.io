@@ -33,12 +33,3 @@ table {
 }
 /* end reset browser styles */
 
-.tinted-image {
-	background:
-	/* transparent smoke */
-	linear-gradient(rgba(72, 72, 72, .75), rgba(72,72,72,.75)),
-	url(forest-mountain.jpeg);
-}
-html url {
-	max-width: 100%;
-}

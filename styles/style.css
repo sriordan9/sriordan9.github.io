@@ -33,5 +33,39 @@ table {
 	margin: 0;
 	padding: 0;
 }
+html {
+	min-height: 100%;
+}
 /* end reset browser styles */
 
+li {
+	display: inline;
+	margin: 1rem;
+}
+ul {
+	text-align: center;
+}
+aside {
+	position: absolute;
+	width: 3rem;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+i {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+}
+div {
+	text-align: center;
+	margin-top: 235px;
+} 
+footer {
+	position: absolute;
+	display: block;
+	right: 0;
+	bottom: 0;
+	left: 0;	
+	text-align: center;
+}

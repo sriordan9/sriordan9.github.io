@@ -47,16 +47,34 @@ html {
 	background-position: center center; 
 	background-repeat: no-repeat;
 	background-color: black;
+	font-family: 'Salsa', cursive, Arial, Helvetica, sans-serif;
+	color: #80BA5D;
+}
+.tinted-image a:hover{
+	color: white;
 }
 /* END HTML */
 
 /* HEADER */
-li {
-	display: inline;
-	margin: 1rem;
-}
 ul {
-	text-align: center;
+	text-align: center;	
+	list-style: none;
+}
+@media screen and (max-width: 520px){
+	ul {
+		display: flex;
+		justify-content: space-evenly;
+	}
+}
+@media screen and (min-width: 521px){
+	li {
+		display: inline;
+		margin: 1rem 3rem;
+	}
+}
+li a {
+	color: #80BA5D;
+	text-decoration: none;
 }
 /* END HEADER */
 
@@ -71,15 +89,20 @@ aside {
 i {
 	position: absolute;
 	top: 50%;
-	right: 10px;
+	right: 5px;
+	border: 2px solid #80BA5D;
+	border-radius: 2px;
 }
 /* END ASIDE */
 
 /* MAIN */
-div {
+.text-style {
 	text-align: center;
-	margin-top: 235px;
+	margin-top: 235px;	
 } 
+h1 {
+	font-size: 2.5rem;
+}
 /* END MAIN */
 
 /* FOOTER */
@@ -90,5 +113,6 @@ footer {
 	bottom: 0;
 	left: 0;	
 	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
 }
 /* END FOOTER */

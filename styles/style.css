@@ -1,4 +1,4 @@
-/* reset browser styles */
+/* RESET BROWSER STYLES */
 /* html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
@@ -36,8 +36,34 @@ table {
 html {
 	min-height: 100%;
 }
-/* end reset browser styles */
+/* END RESET BROWSER STYLES */
 
+/* HTML DOCUMENT */
+.tinted-image {
+	background:
+	/* transparent smoke */
+	linear-gradient(rgba(72, 72, 72, .95), rgba(72,72,72,.15)),
+	url(forest-mountain-sm.jpeg);
+}
+@media screen and (min-width: 430px) {
+	.tinted-image {
+		background: 
+		/* transparent smoke */
+		linear-gradient(rgba(72, 72, 72, .95), rgba(72,72,72,.15)),
+		url(forest-mountain-med.jpeg);
+	}
+}
+@media screen and (min-width: 700px) {
+	.tinted-image {
+		background: 
+		/* transparent smoke */
+		linear-gradient(rgba(72, 72, 72, .95), rgba(72,72,72,.15)),
+		url(forest-mountain-lg.jpeg);
+	}
+}
+/* END HTML */
+
+/* HEADER */
 li {
 	display: inline;
 	margin: 1rem;
@@ -45,6 +71,9 @@ li {
 ul {
 	text-align: center;
 }
+/* END HEADER */
+
+/* ASIDE */
 aside {
 	position: absolute;
 	width: 3rem;
@@ -57,10 +86,16 @@ i {
 	top: 50%;
 	right: 10px;
 }
+/* END ASIDE */
+
+/* MAIN */
 div {
 	text-align: center;
 	margin-top: 235px;
 } 
+/* END MAIN */
+
+/* FOOTER */
 footer {
 	position: absolute;
 	display: block;
@@ -69,3 +104,4 @@ footer {
 	left: 0;	
 	text-align: center;
 }
+/* END FOOTER */

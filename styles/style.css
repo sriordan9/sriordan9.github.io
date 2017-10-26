@@ -43,23 +43,10 @@ html {
 	background:
 	/* transparent smoke */
 	linear-gradient(rgba(72, 72, 72, .95), rgba(72,72,72,.15)),
-	url(forest-mountain-sm.jpeg);
-}
-@media screen and (min-width: 430px) {
-	.tinted-image {
-		background: 
-		/* transparent smoke */
-		linear-gradient(rgba(72, 72, 72, .95), rgba(72,72,72,.15)),
-		url(forest-mountain-med.jpeg);
-	}
-}
-@media screen and (min-width: 700px) {
-	.tinted-image {
-		background: 
-		/* transparent smoke */
-		linear-gradient(rgba(72, 72, 72, .95), rgba(72,72,72,.15)),
-		url(forest-mountain-lg.jpeg);
-	}
+	url(forest-mountain-lg.jpeg);
+	background-position: center center; 
+	background-repeat: no-repeat;
+	background-color: black;
 }
 /* END HTML */
 

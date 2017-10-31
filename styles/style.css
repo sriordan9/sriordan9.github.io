@@ -93,9 +93,26 @@ i {
 /* END MAIN OF INDEX */
 
 /* MAIN OF PROJECTS/ABOUT*/
-.article-format{
+.article-format {
 	text-align: center;
+	margin: auto;
+	margin-top: 5rem;
+	background: linear-gradient(rgba(30, 30, 30, 0.75), rgba(30, 30, 30,.75));
+	max-width: 75%;
+	border-radius: 10px;
 }
+.article-format h1 {
+	padding: 1rem;
+	color: rgb(206, 206, 206);
+}
+/* save this .artile-format p {} for larger screens after media query */
+/* .article-format p {
+	font-size: 1.25rem;
+	padding: 0.25rem 3rem 3rem 3rem;
+	text-align: left;
+	line-height: 1.75rem;
+	text-indent: 2rem;
+} */
 
 
 /* END MAIN OF PROJECTS/ABOUT */

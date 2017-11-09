@@ -73,6 +73,9 @@ li a {
 	font-size: 1.25rem;
 	text-decoration: none;
 }
+li a:hover {
+	cursor: pointer;
+}
 /* END HEADER */
 
 /* ASIDE */

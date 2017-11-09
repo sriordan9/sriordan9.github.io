@@ -92,12 +92,12 @@ i {
 }
 /* END ASIDE */
 
-/* MAIN OF INDEX */
+/* MAIN OF HOME */
 .text-position {
 	text-align: center;
 	margin-top: 235px;	
 } 
-/* END MAIN OF INDEX */
+/* END MAIN OF HOME */
 
 /* MAIN OF PROJECTS/ABOUT*/
 .article-format {
@@ -150,16 +150,18 @@ i {
 		text-indent: 2rem;
 	}
 }
-
-
 /* END MAIN OF PROJECTS/ABOUT */
 
 /* MAIN OF ALL PAGES */
+.hide-content {
+	display: none;
+}
+
 h1 {
 	font-size: 2.5rem;
 }
 
-/* MAIN OF ALL PAGES */
+/* END MAIN OF ALL PAGES */
 
 /* FOOTER */
 footer {

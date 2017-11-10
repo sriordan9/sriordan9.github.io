@@ -1,3 +1,6 @@
+
+// CLEAN UP, PLACE ALL LIKE TYPES IN OBJECTS (VAR, LISTENERS, ETC), REMOVE COMMENTS AT BOTTOM
+
 var getTag = document.getElementsByTagName('li');
 var navArray = [getTag[0], getTag[1], getTag[2]];
 
@@ -13,14 +16,10 @@ navArray[0].addEventListener('click', displayContent.bind(this, showHome, showPr
 navArray[1].addEventListener('click', displayContent.bind(this, showProj, showHome, showAbout));
 navArray[2].addEventListener('click', displayContent.bind(this, showAbout, showHome, showProj));
 
+//Displays content of clicked link, and ensures content of other pages does not display
 
 function displayContent(showContent, hideContentOne, hideContentTwo) {
     console.log("function accessed");
-    // var showHome, showProj, showAbout;
-
-    // showHome = document.getElementsByTagName('article')[0];
-    // showProj = document.getElementsByTagName('article')[1];
-    // showAbout = document.getElementsByTagName('article')[2];
 
     if(showContent.classList.contains('hide-content')) {
         showContent.classList.remove('hide-content');

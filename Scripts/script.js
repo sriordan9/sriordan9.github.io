@@ -11,7 +11,7 @@ function listener() {
     showProj = document.getElementsByTagName('article')[1];
     showAbout = document.getElementsByTagName('article')[2];
     
-    console.log(navArray);
+    // console.log(navArray);
     
     navArray[0].addEventListener('click', displayContent.bind(this, showHome, showProj, showAbout));
     navArray[1].addEventListener('click', displayContent.bind(this, showProj, showHome, showAbout));
@@ -22,19 +22,19 @@ function listener() {
 // Displays content of clicked link, and ensures content of other pages does not display
 
 function displayContent(showContent, hideContentOne, hideContentTwo) {
-    console.log("function accessed");
+    // console.log("function accessed");
 
     if(showContent.classList.contains('hide-content')) {
         showContent.classList.remove('hide-content');
-        console.log('showContent ifStmt accessed');
+        // console.log('showContent ifStmt accessed');
     }
     if(!hideContentOne.classList.contains('hide-content')) {
         hideContentOne.classList.toggle('hide-content');
-        console.log('hideContentOne ifStmt accessed');
+        // console.log('hideContentOne ifStmt accessed');
     }
     if(!hideContentTwo.classList.contains('hide-content')) {
         hideContentTwo.classList.toggle('hide-content');
-        console.log('hideContentTwo ifStmt accessed');
+        // console.log('hideContentTwo ifStmt accessed');
     }
 };
 

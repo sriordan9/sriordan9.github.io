@@ -38,10 +38,6 @@ html {
 	background-repeat: no-repeat;
 	background-color: black;
 	font-family: 'Salsa', cursive, Arial, Helvetica, sans-serif;
-	/* color: #CFFA7E; */
-	/* color: #E1FC7F; */
-	/* color: #FFC086; */
-	/* color: rgb(253, 218, 183); */
 	color: whitesmoke;
 
 }
@@ -57,9 +53,15 @@ img {
 
 /* HEADER */
 ul {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	text-align: center;	
 	list-style: none;
-	margin-top: .75rem;
+	padding: .75rem 0 .25rem;
+	border-bottom: solid grey 2px;
+	background-color: black;
 }
 @media screen and (max-width: 520px){
 	ul {
@@ -114,8 +116,8 @@ i {
 	max-width: 80%;
 	max-height: 100vh;
 	overflow: scroll;
-	/* border-top: solid grey 2px; */
-	margin-top: 7px;
+	padding-top: 5rem;
+	padding-bottom: 2rem;
 }
 .article-format::-webkit-scrollbar {
 	display: none;
@@ -136,10 +138,7 @@ i {
 	padding: 1rem;
 	padding-bottom: .25rem;
 	font-size: 1.5rem;
-	/* color: rgb(206, 206, 206); */
-	/* color: #E1FC7F;  */
 	color: whitesmoke;
-	/* color: rgb(166, 214, 166); */
 }
 /* increase main header font sizes */
 @media screen and (min-width: 713px) {
@@ -152,7 +151,6 @@ i {
 	padding-left: .5rem;
 	padding-right: .5rem;
 	text-indent: .75rem;
-	
 }
 /* increase main paragraph attributes for readability */
 @media screen and (min-width: 713px){
@@ -191,7 +189,7 @@ h1 {
 /* END MAIN OF ALL PAGES */
 
 /* FOOTER */
-footer {
+/* footer {
 	position: absolute;
 	display: block;
 	right: 0;
@@ -199,5 +197,5 @@ footer {
 	left: 0;	
 	text-align: center;
 	font-family: 'Times New Roman', Times, serif;
-}
+} */
 /* END FOOTER */

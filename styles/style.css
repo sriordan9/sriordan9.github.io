@@ -6,29 +6,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
 	line-height: 1.2;
 }
+html {
+	min-height: 100%;
+}
 ol { 
 	padding-left: 1.4em;
 	list-style: decimal;
-}
-ul {
-	padding-left: 1.4em
-	list-style: square;
 }
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 } 
+ul {
+	padding-left: 1.4em;
+	list-style: square;
+}
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
-html {
-	min-height: 100%;
-}
 /* END RESET BROWSER STYLES */
 
 /* HTML DOCUMENT */
+img {
+	padding: .75rem;
+	display: block;
+	margin: auto;
+}
 .tinted-image {
 	background:
 	/* transparent smoke */
@@ -41,17 +46,27 @@ html {
 	color: whitesmoke;
 
 }
-img {
-	padding: .75rem;
-	display: block;
-	margin: auto;
-}
 .tinted-image a:hover{
 	color: white;
 }
 /* END HTML */
 
 /* HEADER */
+
+@media screen and (min-width: 521px){
+	li {
+		display: inline;
+		margin: 1rem 3rem;
+	}
+}
+li a {
+	color: #80BA5D;
+	font-size: 1.25rem;
+	text-decoration: none;
+}
+li a:hover {
+	cursor: pointer;
+}
 ul {
 	position: fixed;
 	top: 0;
@@ -69,38 +84,7 @@ ul {
 		justify-content: space-evenly;
 	}
 }
-@media screen and (min-width: 521px){
-	li {
-		display: inline;
-		margin: 1rem 3rem;
-	}
-}
-li a {
-	color: #80BA5D;
-	font-size: 1.25rem;
-	text-decoration: none;
-}
-li a:hover {
-	cursor: pointer;
-}
 /* END HEADER */
-
-/* ASIDE */
-/* aside {
-	position: absolute;
-	width: 3rem;
-	top: 0;
-	bottom: 0;
-	right: 0;
-}
-i {
-	position: absolute;
-	top: 50%;
-	right: 5px;
-	border: 2px solid #80BA5D;
-	border-radius: 2px;
-} */
-/* END ASIDE */
 
 /* MAIN OF HOME */
 .text-position {
@@ -110,6 +94,30 @@ i {
 /* END MAIN OF HOME */
 
 /* MAIN OF PROJECTS/ABOUT*/
+/* .article-format animation */
+article {
+	animation-duration: 1.15s;
+	animation-name: fadein;
+}
+@keyframes fadein {
+	from {
+		opacity: 0;		 
+	}
+	to {
+		opacity: 1;		
+	}
+}
+article a {
+	color: #80BA5D;
+}
+article img {
+	max-width: 500px;
+}
+@media screen and (max-width: 575px){
+	article img {
+		max-width: 300px;
+	}
+}
 .article-format {
 	text-align: center;
 	margin: auto;
@@ -122,20 +130,20 @@ i {
 .article-format::-webkit-scrollbar {
 	display: none;
 }
-/* make main top margin larger */
-/* @media screen and (min-width: 713px) {
-	.article-format {
-		margin-top: 3.5rem;
-	}
-} */
 /* change max-width of main from % to a max rem value */
 @media screen and (min-width: 825px) {
 	.article-format {
 		max-width: 45rem;
 	}
 }
+/* make main top margin larger */
+/* @media screen and (min-width: 713px) {
+	.article-format {
+		margin-top: 3.5rem;
+	}
+} */
 .article-format h1 {
-	padding: 1rem;
+	padding: 2.5rem;
 	padding-bottom: .25rem;
 	font-size: 1.5rem;
 	color: whitesmoke;
@@ -162,40 +170,13 @@ i {
 		text-indent: 2rem;
 	}
 }
-/* .article-format animation */
-article {
-	animation-duration: 1.15s;
-	animation-name: fadein;
-}
-@keyframes fadein {
-	from {
-		opacity: 0;		 
-	}
-	to {
-		opacity: 1;		
-	}
-}
 /* END MAIN OF PROJECTS/ABOUT */
 
 /* MAIN OF ALL PAGES */
-.hide-content {
-	display: none;
-}
-
 h1 {
 	font-size: 2.5rem;
 }
-
+.hide-content {
+	display: none;
+}
 /* END MAIN OF ALL PAGES */
-
-/* FOOTER */
-/* footer {
-	position: absolute;
-	display: block;
-	right: 0;
-	bottom: 0;
-	left: 0;	
-	text-align: center;
-	font-family: 'Times New Roman', Times, serif;
-} */
-/* END FOOTER */
